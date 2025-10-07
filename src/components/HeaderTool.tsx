@@ -4,8 +4,6 @@ import Image from "next/image";
 import "@/styles/headerTool.css";
 import SearchBar from "@/components/SearchBar";
 
-const userImg = "https://randomuser.me/api/portraits/men/32.jpg";
-
 const HeaderTool = () => {
   return (
     <header className="header-tool">
@@ -33,7 +31,7 @@ const HeaderTool = () => {
         <div className="user-chip">
           <span className="user-name">Miguel Serrano</span>
           <Image
-            src={userImg}
+            src={"/user.jpg"}
             alt="User"
             width={35}
             height={35}
