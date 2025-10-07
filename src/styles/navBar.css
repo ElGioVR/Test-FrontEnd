@@ -1,0 +1,122 @@
+.left-sidebar {
+  width: 225px;
+  background: #08325B;
+  color: #A5A5A5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0;
+  box-shadow: 2px 0 8px rgba(18, 27, 72, 0.04);
+  transition: width 0.3s ease;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+  height: 44px;
+  border-bottom: 1px solid #08325B;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 170px;
+  height: auto;
+}
+
+.logo-icon {
+  display: none;
+}
+
+.navigation {
+  margin-top: 17px;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  padding: 10px 23.6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navigation li:hover {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 28px 0 25px;
+}
+
+.settings,
+.logout {
+  cursor: pointer;
+  border-top: 1px solid #08325B;
+  color: #fff;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings:hover {
+  color: #64b5f6;
+}
+
+.logout:hover {
+  color: #ff6b6b;
+}
+
+@media (max-width: 880px) {
+  .left-sidebar {
+    width: 70px;
+    padding: 24px 0;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .logo-icon {
+    display: block;
+  }
+
+  .navigation li {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .navigation li span {
+    display: none;
+  }
+
+  .settings span,
+  .logout span {
+    display: none;
+  }
+
+  .footer {
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .left-sidebar {
+    display: none;
+  }
+}

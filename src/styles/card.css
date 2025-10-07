@@ -1,0 +1,85 @@
+.custom-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.custom-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.custom-card-icon {
+  color: #083560;
+  font-size: 28px;
+}
+
+.custom-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card-title {
+  color: #38393B;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.custom-card-subtitle {
+  color: #38393B;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.custom-card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.custom-card-timer {
+  text-align: right;
+  font-size: 13px;
+  color: #38393B;
+}
+
+.custom-card-timer-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.custom-card-timer-value {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+.custom-card-timer-unit {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.custom-card-button {
+  background-color: #116AC1;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.custom-card-button:hover {
+  background-color: #0b5394;
+}

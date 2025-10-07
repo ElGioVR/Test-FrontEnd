@@ -1,0 +1,185 @@
+/* DESKTOP */
+.dashboard-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-spacer {
+  display: none;
+}
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  justify-content: center;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chip-item {
+  flex: 1 1 150px;
+  display: flex;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto auto;
+  gap: 8px;
+  margin: 24px 32px;
+}
+
+.cards-row {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.card-item.small {
+  flex: 1 1 25%;
+}
+
+.card-item.large {
+  flex: 1 1 50%;
+}
+
+.tasks-section {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  margin-top: -130px;
+}
+
+.calendar-wrapper {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.files-section {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  margin-top: 8px;
+}
+
+/* TABLET */
+@media (max-width: 1148px) and (min-width: 601px) {
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .chips-container {
+    order: 1;
+  }
+
+  .calendar-wrapper,
+  .files-section {
+    width: 100%;
+  }
+
+  .calendar-wrapper,
+  .files-section {
+    display: block;
+  }
+
+  .calendar-wrapper {
+    width: 100%;
+  }
+
+  .calendar-wrapper,
+  .files-section {
+    grid-row: auto;
+  }
+
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "cards cards"
+      "calendar files"
+      "tasks tasks";
+    gap: 16px;
+  }
+
+  .cards-row {
+    grid-area: cards;
+  }
+
+  .calendar-wrapper {
+    grid-area: calendar;
+  }
+
+  .files-section {
+    grid-area: files;
+  }
+
+  .tasks-section {
+    grid-area: tasks;
+    margin-top: 10px;
+  }
+
+  .chips-container .chip-item:nth-child(n+6) {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 750px) {
+  .header-spacer {
+    display: block;
+  }
+
+  .dashboard-content {
+    display: flex !important;
+    flex-direction: column;
+    margin: 16px 12px;
+  }
+
+  .chips-container {
+    order: 1;
+    gap: 6px;
+  }
+
+  .cards-row {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .calendar-wrapper {
+    order: 3;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .tasks-section {
+    order: 4;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .files-section {
+    order: 5;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .card-item.small {
+    flex: 1 1 48%;
+  }
+
+  .card-item.large {
+    flex: 1 1 100%;
+  }
+
+    .chips-container .chip-item:nth-child(n+3) {
+    display: none;
+  }
+}
